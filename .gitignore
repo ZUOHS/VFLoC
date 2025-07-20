@@ -1,0 +1,7 @@
+logs/
+.env
+.idea
+*_issues_with_analysis_*.xlsx
+*_progress.json
+*_stats_progress_100.json
+/test.py
