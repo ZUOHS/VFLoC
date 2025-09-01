@@ -866,6 +866,57 @@
     "added_paths": []
   },
   {
+    "id": 2023975876,
+    "number": 1138,
+    "html_url": "https://github.com/usebruno/bruno/issues/1138",
+    "type": "issue",
+    "labels": "enhancement,help wanted",
+    "created_date": "2023-12-04 14:23:38",
+    "updated_date": "2024-04-17 08:49:46",
+    "resolved_date": "2024-04-17 08:49:45",
+    "title": "[Feature Request] Multiline strings in Form URL Encoded bodies",
+    "body": "Some of our API endpoints require multiline strings of JSON or XML to be passed via URL parameters.  \n\nCurrently in Bruno the body parameter editor only allows you to see one line at a time. The user is still able to scroll through the data using the up and down arrow keys but it can be tedious. The .bru format will also convert these into an escaped single line string which also makes it difficult to work with.\n\n### Current implementation\n![image](https://github.com/usebruno/bruno/assets/1078339/fbfaf332-2965-461b-9d16-19b9b327f411)\n\n### Proposed Change\n\nA potential format for multiline string values could be something like this, based on how script blocks are already handled in Bruno\n\n```\nbody:form-urlencoded {\n  Action: SendMessage\n  MessageBody: {\n    <?xml version=\"1.0\"?>\n    <TestEvent>\n      <Name>Test</name>\n      <Value>123</value>\n    </TestEvent>\n  }\n}\n```\n\nThe UI could take inspiration from Insomnia\n\n![image](https://github.com/usebruno/bruno/assets/1078339/77430021-db3f-46f9-a010-8d47c38dff45)\n![image](https://github.com/usebruno/bruno/assets/1078339/7d36fa4f-016f-4b97-b524-e80d2d66b659)\n\n",
+    "state": "closed",
+    "comments": 1,
+    "state_reason": "completed",
+    "repository_url": "https://api.github.com/repos/usebruno/bruno",
+    "labels_url": "https://api.github.com/repos/usebruno/bruno/issues/1138/labels{/name}",
+    "comments_url": "https://api.github.com/repos/usebruno/bruno/issues/1138/comments",
+    "events_url": "https://api.github.com/repos/usebruno/bruno/issues/1138/events",
+    "user_login": "medsouz",
+    "user_url": "https://github.com/medsouz",
+    "assignees": NaN,
+    "milestone_title": NaN,
+    "milestone_description": NaN,
+    "pull_request_url": NaN,
+    "body_image_count": 3,
+    "comment_image_count": 0,
+    "total_image_count": 3,
+    "pr_number": 2086,
+    "pr_source": "search_api",
+    "commits": [
+      "31142543f7d2bfe7c9aa243e7dbf0d0ed4bef898",
+      "524ee75c770f12e5216aa7c7879c428b04bc8427",
+      "6d6be0c2e8dce5eaf46b3d143c7238f84bb92907",
+      "ee049b9a6c90d63ae94a3a74903446f099a57ad3",
+      "dfbbce4c8628216a4588d1702f5af7d679d39c58",
+      "f15d8bd82b0700c05b1952b00ef78b50cb195428"
+    ],
+    "commit_check": "1",
+    "modified_files": [
+      "packages/bruno-app/src/components/RequestPane/FormUrlEncodedParams/index.js",
+      "packages/bruno-app/src/components/RequestPane/MultipartFormParams/index.js",
+      "packages/bruno-app/src/components/RequestPane/RequestHeaders/index.js",
+      "packages/bruno-app/src/components/SingleLineEditor/StyledWrapper.js",
+      "packages/bruno-app/src/components/SingleLineEditor/index.js",
+      "packages/bruno-lang/v2/src/bruToJson.js",
+      "packages/bruno-lang/v2/src/jsonToBru.js"
+    ],
+    "added_paths": [
+      "packages/bruno-app/src/components/MultiLineEditor"
+    ]
+  },
+  {
     "id": 1428257996,
     "number": 54,
     "html_url": "https://github.com/usebruno/bruno/issues/54",
@@ -905,5 +956,46 @@
       "packages/bruno-app/src/components/SingleLineEditor/index.js"
     ],
     "added_paths": []
+  },
+  {
+    "id": 1422148932,
+    "number": 45,
+    "html_url": "https://github.com/usebruno/bruno/issues/45",
+    "type": "issue",
+    "labels": "enhancement,good first issue,help wanted",
+    "created_date": "2022-10-25 09:24:56",
+    "updated_date": "2023-01-29 14:08:00",
+    "resolved_date": "2023-01-29 14:08:00",
+    "title": "Importing Postman Collections",
+    "body": "Postman is the de-facto tool when among developers.\nIt's very important to allow developers to be able to import a postman collection into bruno.\n\nIt must be noted that bruno has a lot less features than postman, but we do support the essentials for anyone to get started.\n\nResources:\nBruno's request schema: https://github.com/usebruno/bruno/tree/main/packages/bruno-schema\nImporter for bruno collections: https://github.com/usebruno/bruno/blob/main/packages/bruno-app/src/utils/collections/import.js\n\nLets get started with just importing as much of a request data that we can import from postman.\n\nCurrently, we can create a new file called 'import-postman-collections.js'. Once this is coming along well, we can move the importers to a separate package called as \"bruno-importers\"\n\nUX:\nRight now, clicking on import brings up a file selector. We need to bring up a modal that has 2 links.\nOne to import bruno collection, another to import postman collection.\n![image](https://user-images.githubusercontent.com/9350733/197736340-2648814c-b886-46bf-aaf9-8d2f8e187e8c.png)\n",
+    "state": "closed",
+    "comments": 4,
+    "state_reason": "completed",
+    "repository_url": "https://api.github.com/repos/usebruno/bruno",
+    "labels_url": "https://api.github.com/repos/usebruno/bruno/issues/45/labels{/name}",
+    "comments_url": "https://api.github.com/repos/usebruno/bruno/issues/45/comments",
+    "events_url": "https://api.github.com/repos/usebruno/bruno/issues/45/events",
+    "user_login": "helloanoop",
+    "user_url": "https://github.com/helloanoop",
+    "assignees": NaN,
+    "milestone_title": NaN,
+    "milestone_description": NaN,
+    "pull_request_url": NaN,
+    "body_image_count": 2,
+    "comment_image_count": 0,
+    "total_image_count": 2,
+    "pr_number": "481486cd1cdb5bab128688daacc48299be2ddebf",
+    "pr_source": "commit",
+    "commits": [
+      "481486cd1cdb5bab128688daacc48299be2ddebf"
+    ],
+    "commit_check": "1",
+    "modified_files": [
+      "packages/bruno-app/src/components/Sidebar/ImportCollection/index.js",
+      "packages/bruno-app/src/utils/importers/bruno-collection.js"
+    ],
+    "added_paths": [
+      "packages/bruno-app/src/utils/importers"
+    ]
   }
 ]

@@ -1247,53 +1247,6 @@
     ]
   },
   {
-    "id": 427329095,
-    "number": 2254,
-    "html_url": "https://github.com/TeamNewPipe/NewPipe/issues/2254",
-    "type": "issue",
-    "labels": "feature request,good first issue,GUI",
-    "created_date": "2019-03-30 21:18:40",
-    "updated_date": "2020-01-29 15:30:16",
-    "resolved_date": "2020-01-19 11:55:56",
-    "title": "Do not show \"History\" in context menu if \"History & Cache\" disabled in \"Settings\"",
-    "body": "- [x] I carefully read the [contribution guidelines](https://github.com/TeamNewPipe/NewPipe/blob/HEAD/.github/CONTRIBUTING.md) and agree to them.\n- [x] I checked if the issue/feature exists in the latest version.\n- [ ] I did use the [incredible bugreport to markdown converter](https://teamnewpipe.github.io/CrashReportToMarkdown/) to paste bug reports.\n\n![pic.1](https://i.imgur.com/3nPj4jO.png)\n\n![pic.2](https://i.imgur.com/lDBK798.png)",
-    "state": "closed",
-    "comments": 6,
-    "state_reason": "completed",
-    "repository_url": "https://api.github.com/repos/TeamNewPipe/NewPipe",
-    "labels_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/2254/labels{/name}",
-    "comments_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/2254/comments",
-    "events_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/2254/events",
-    "user_login": "ghost",
-    "user_url": "https://github.com/ghost",
-    "assignees": NaN,
-    "milestone_title": NaN,
-    "milestone_description": NaN,
-    "pull_request_url": NaN,
-    "body_image_count": 2,
-    "comment_image_count": 0,
-    "total_image_count": 4,
-    "pr_number": "2960",
-    "pr_source": "search_api",
-    "commits": [
-      "9d773d6e8aa892e929439ba62d2a0985f4e8deb4",
-      "a228e702daee7024ac88f3cbfadba031ce5b6951",
-      "b965f88eb206f9f6348018df2a1628985679b95d"
-    ],
-    "modified_files": [
-      "app/src/main/java/org/schabi/newpipe/MainActivity.java",
-      "app/src/main/java/org/schabi/newpipe/about/AboutActivity.java",
-      "app/src/main/java/org/schabi/newpipe/download/DownloadActivity.java",
-      "app/src/main/java/org/schabi/newpipe/player/ServicePlayerActivity.java",
-      "app/src/main/java/org/schabi/newpipe/util/Constants.java",
-      "app/src/main/res/menu/download_menu.xml",
-      "app/src/main/res/menu/main_menu.xml",
-      "app/src/main/res/menu/menu_about.xml",
-      "app/src/main/res/menu/menu_play_queue.xml"
-    ],
-    "added_paths": []
-  },
-  {
     "id": 311264162,
     "number": 1259,
     "html_url": "https://github.com/TeamNewPipe/NewPipe/issues/1259",
@@ -1373,5 +1326,47 @@
       "app/src/main/res/values/styles_misc.xml"
     ],
     "added_paths": []
+  },
+  {
+    "id": 247499606,
+    "number": 646,
+    "html_url": "https://github.com/TeamNewPipe/NewPipe/issues/646",
+    "type": "issue",
+    "labels": "feature request",
+    "created_date": "2017-08-02 19:40:25",
+    "updated_date": "2017-11-12 18:05:23",
+    "resolved_date": "2017-10-29 09:49:10",
+    "title": "Design and theme issues",
+    "body": "I have found some cases where the current theme is not applied to all elements and only the light theme is displayed.\n\n\n\n- [X] The item / folder picker in the settings has only a light theme (this dialog is called when the user wants to change the video / audio download path).\n- [X] The menu in the tool bar in the about activity has only a light theme too.\n- [x] The license dialog's content (=> the license's file) is a HTML file. Can we apply our themes to it, too? If yes I'd suggest to color the links red and maybe to not underline them.\n\n\nI also found some inconsistent styles and views:\n- [ ] While the link to the about activity exists in the main activity there is no link to it in the tool bar of the downloads activity.\n<table width=\"100%\">\n\n<tr width=\"100%\">\n<td width=\"50%\"><img src=\"https://user-images.githubusercontent.com/17365767/28891075-88dc0994-77c9-11e7-845f-2a2aad786cd4.png\" /></td>\n<td width=\"50%\"><img src=\"https://user-images.githubusercontent.com/17365767/28891070-84c692ca-77c9-11e7-8d67-ee371fe29ff5.png\" /></td>\n</tr>\n\n</table>\n\n- [X] While the tool bar's text color is dark in the main, downloads and settings activities, it is white in the about activity when the light theme is applied. I think white looks better. What do you think?<br>Maybe we also should change the color of the border at the bottom of the fragment's titles (ABOUT/LICENSES) to a ligth gray wich is used for the main text in the light theme.\n\n<table width=\"100%\">\n<tr width=\"100%\">\n<td><img src=\"https://user-images.githubusercontent.com/17365767/28890466-7a55b502-77c7-11e7-96a0-3eef38d775a5.png\" /></td>\n<td><img src=\"https://user-images.githubusercontent.com/17365767/28890461-76b0257c-77c7-11e7-8de6-9b12880032e5.png\" /></td>\n</tr>\n</table>\n\n- [ ] The license dialogs have no separators which separate the dialog's header and footer from the main content as it's done in the settings (e.g. at preferred content language setting).\n\n\n",
+    "state": "closed",
+    "comments": 2,
+    "state_reason": "completed",
+    "repository_url": "https://api.github.com/repos/TeamNewPipe/NewPipe",
+    "labels_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/646/labels{/name}",
+    "comments_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/646/comments",
+    "events_url": "https://api.github.com/repos/TeamNewPipe/NewPipe/issues/646/events",
+    "user_login": "TobiGr",
+    "user_url": "https://github.com/TobiGr",
+    "assignees": NaN,
+    "milestone_title": NaN,
+    "milestone_description": NaN,
+    "pull_request_url": NaN,
+    "body_image_count": 8,
+    "comment_image_count": 0,
+    "total_image_count": 8,
+    "pr_number": 699,
+    "pr_source": "search_api",
+    "commits": [
+      "25bacfe7241636b9892d121575bf95d864362eb3",
+      "2763ccb2cf28810343c1504a727cc87bcc2d24c4"
+    ],
+    "modified_files": [
+      "app/src/main/AndroidManifest.xml",
+      "app/src/main/java/org/schabi/newpipe/settings/DownloadSettingsFragment.java",
+      "app/src/main/res/values/styles.xml"
+    ],
+    "added_paths": [
+      "app/src/main/java/org/schabi/newpipe/util"
+    ]
   }
 ]

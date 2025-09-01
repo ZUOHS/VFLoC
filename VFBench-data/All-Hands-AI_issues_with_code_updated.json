@@ -42,46 +42,6 @@
     "added_paths": []
   },
   {
-    "id": 2769140146,
-    "number": 6048,
-    "html_url": "https://github.com/All-Hands-AI/OpenHands/issues/6048",
-    "pr_url": "https://github.com/All-Hands-AI/OpenHands/pull/6050",
-    "type": "issue",
-    "labels": "enhancement,fix-me",
-    "created_date": "2025-01-05 06:38:51",
-    "updated_date": "2025-01-09 02:39:55",
-    "resolved_date": "2025-01-09 02:39:55",
-    "title": "Update documentation of recommended models and add deepseek",
-    "body": "**What problem or use case are you trying to solve?**\n\nWe have good results with deepseek, and it's quickly becoming a community preferred model.\n\nWe should:\n\n1. Update the documentation regarding preferred models based on @xingyaoww 's [benchmarking results](https://docs.google.com/spreadsheets/d/1wOUdFCMyY6Nt0AIqF705KN4JKOWgeI4wUGUP60krXXs/edit?gid=0#gid=0):\n\n<img width=\"971\" alt=\"Screenshot 2025-01-05 at 3 34 00 PM\" src=\"https://github.com/user-attachments/assets/c3f36aae-c11e-4243-9cfc-e224dd961021\" />\n\nThis is the most recommended model: \n* anthropic/claude-3-5-sonnet-20241022\t41.67%\n\nThe following models also can achieve acceptable performance\n* anthropic/claude-3-5-haiku-20241022\t28.67%\n* deepseek/deepseek-chat\t23.00%\n* gpt-4o\t18.67%\n\nWe can also add a link to this spreadsheet (to replace the link to the older blog post that is currently in the doc).\n\n2. Make sure that all of these are added by default in the model selector in the frontend.",
-    "state": "closed",
-    "comments": 2,
-    "state_reason": "completed",
-    "repository_url": "https://api.github.com/repos/All-Hands-AI/OpenHands",
-    "labels_url": "https://api.github.com/repos/All-Hands-AI/OpenHands/issues/6048/labels{/name}",
-    "comments_url": "https://api.github.com/repos/All-Hands-AI/OpenHands/issues/6048/comments",
-    "events_url": "https://api.github.com/repos/All-Hands-AI/OpenHands/issues/6048/events",
-    "user_login": "neubig",
-    "user_url": "https://github.com/neubig",
-    "assignees": "neubig",
-    "milestone_title": NaN,
-    "milestone_description": NaN,
-    "pull_request_url": NaN,
-    "body_image_count": 1,
-    "comment_image_count": 0,
-    "total_image_count": 1,
-    "pr_number": 6050,
-    "pr_source": "search_api",
-    "commits": [
-      "f82ae33c7625d80a344d02f5139f19300681a0ec",
-      "3160ef431d996d18376206b690e94c79dba39a0b"
-    ],
-    "commit_check": "1",
-    "modified_files": [
-      "frontend/src/utils/verified-models.ts"
-    ],
-    "added_paths": []
-  },
-  {
     "id": 2762104551,
     "number": 5894,
     "html_url": "https://github.com/All-Hands-AI/OpenHands/issues/5894",
